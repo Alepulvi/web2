@@ -1,0 +1,305 @@
+nav * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #228b22;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.marchio {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+
+  gap: 20px;
+}
+
+nav p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+z .homeimg {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.hero {
+  padding: 30px;
+  background-color: white;
+}
+
+.hero h2 {
+  font-size: 28px;
+  color: #006400;
+  margin-bottom: 20px;
+}
+
+.testoattivita {
+  margin-bottom: 15px;
+}
+
+.attivita {
+  padding: 30px;
+  background-color: #e8f5e9;
+  border-top: 2px solid #c8e6c9;
+}
+
+.attivita h2 {
+  color: #2e7d32;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.attivita ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.attivita li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #228b22;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero,
+  .attivita {
+    padding: 20px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
+
+.parchi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+
+.parchi.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.parchi.card:hover {
+  transform: scale(1.03);
+}
+
+.parchi-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.parchi.testo {
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .parchi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .parchi-img img {
+    height: 180px;
+  }
+}
+/* Griglia 4x3 */
+.parchi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px;
+}
+
+.parchi.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.parchi.card:hover {
+  transform: scale(1.03);
+}
+
+.parchi-img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.parchi.testo {
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Responsive per mobile e tablet */
+@media screen and (max-width: 1024px) {
+  .parchi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .parchi-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.banner {
+  background-color: green;
+  margin-top: 2rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-title {
+  color: white;
+  height: 40%;
+  padding-top: 2rem;
+}
+
+.last-paragraph {
+  margin-bottom: 4rem;
+}
