@@ -3,8 +3,14 @@ nav * {
   padding: 0;
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
-}
 
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+ 
+}
+ 
 body {
   background-color: #f4f4f4;
   color: #333;
@@ -68,19 +74,22 @@ z .homeimg {
 }
 
 .testoattivita {
-  margin-bottom: 15px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .attivita {
   padding: 30px;
-  background-color: #e8f5e9;
-  border-top: 2px solid #c8e6c9;
+ 
+  
 }
 
 .attivita h2 {
   color: #2e7d32;
   font-size: 24px;
   margin-bottom: 15px;
+   max-width: 1100px;
+  margin: 0 auto;
 }
 
 .attivita ul {
@@ -224,6 +233,8 @@ footer {
   padding: 15px;
   font-size: 1.1em;
   font-weight: bold;
+   max-width: 1100px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -272,16 +283,31 @@ footer {
   font-weight: bold;
 }
 
+.banner p{
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  
 /* Responsive per mobile e tablet */
 @media screen and (max-width: 1024px) {
   .parchi-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .banner p{
+    margin-left: 20px;
+    margin-right: 10px;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px)
+ {
   .parchi-grid {
     grid-template-columns: 1fr;
+    padding:100px;
+  }
+  .banner p{
+    margin-left: 20px;
+    margin-right: 10px;
   }
 }
 
